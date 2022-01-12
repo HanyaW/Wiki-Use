@@ -29,7 +29,7 @@ for module_name in ALL_MODULES:
 
 LOGS.info(
     f"➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖"
-    f"\n✘ 𝐅𝐥𝐢𝐜𝐤𝐬 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 ✘ v{BOT_VER} ⚙️ [Berhasil Diaktifkan 🔥]"
+    f"\n☆ 𝐖𝐢𝐤𝐢-𝐔𝐬𝐞𝐫𝐛𝐨𝐭​ ☆ v{BOT_VER} ⚙️ [Berhasil Diaktifkan 🐥]"
     f"\nSelamat memakai saya tuan {ALIVE_NAME}"
     f"\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖")
 
