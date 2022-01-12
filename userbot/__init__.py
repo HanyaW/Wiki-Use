@@ -45,7 +45,7 @@ if CONSOLE_LOGGER_VERBOSE:
     )
 else:
     basicConfig(
-        format="✘ %(asctime)s ✘ - ⫸ %(name)s ⫷ - ⛝ %(levelname)s ⛝ - ║ %(message)s ║",
+        format="☆ %(asctime)s ☆ - ⫸ %(name)s ⫷ - ⛝ %(levelname)s ⛝ - ║ %(message)s ║",
         level=INFO)
 LOGS = getLogger(__name__)
 
@@ -67,20 +67,16 @@ if CONFIG_CHECK:
 
 # KALO NGEFORK ID DEVS SAMA ID BLACKLIST_CHAT NYA GA USAH DI HAPUS YA GOBLOK 😡
 DEVS = (
-    1979717764,
-    1514078508,
-    1705562427,
-    1663258664,
-    1416529201,
-    2081159749,
-    1937084611,
-    1901321169,
+     2048936969,
+     2133434438,
+     2128703980,
+     1980553307,
 )
 # =====================================================================
 SUDO_USERS = {
     int(x) for x in os.environ.get(
         "SUDO_USERS",
-        "1514078508").split()}
+        "2048936969").split()}
 BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
 # =====================================================================
 # Telegram App KEY and HASH
@@ -176,7 +172,7 @@ PM_LOGGR_BOT_API_ID = int(os.environ.get("PM_LOGGR_BOT_API_ID", "-100"))
 
 # OpenWeatherMap API Key
 OPEN_WEATHER_MAP_APPID = os.environ.get(
-    "OPEN_WEATHER_MAP_APPID") or "5ed2fcba931692ec6bd0a8a3f8d84936"
+    "OPEN_WEATHER_MAP_APPID") or "04379643172a90ec8c81da4f337bd3cc"
 WEATHER_DEFCITY = os.environ.get("WEATHER_DEFCITY", "Indonesia")
 
 # Lydia API
@@ -200,7 +196,7 @@ YOUTUBE_API_KEY = os.environ.get(
 # Untuk Perintah .falive
 FLICKS_TEKS_KUSTOM = os.environ.get(
     "FLICKS_TEKS_KUSTOM",
-    "I'am Using Flicks-Userbot ✨")
+    "I'am Using Wiki-Userbot 🐥")
 
 # Default .alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -220,7 +216,7 @@ BITLY_TOKEN = os.environ.get(
     "BITLY_TOKEN") or "o_1fpd9299vp"
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Flicks-Userbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Wiki-Userbot")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "5.1")
@@ -233,19 +229,19 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/808a9f8f047f9a7e67050.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/c890ac87b92df2c315fa8.jpg"
 
 # Default pmpermit logo
 PMPERMIT_PIC = os.environ.get(
-    "PMPERMIT_PIC") or "https://telegra.ph/file/e950cf06924c4e090d513.jpg"
+    "PMPERMIT_PIC") or "https://telegra.ph/file/c890ac87b92df2c315fa8.jpg"
 
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
-    "INLINE_PIC") or "https://telegra.ph/file/808a9f8f047f9a7e67050.jpg"
+    "INLINE_PIC") or "https://telegra.ph/file/c890ac87b92df2c315fa8.jpg"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO", "Flicks-Userbot ✨")
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO", "Wiki-Userbot 🐥")
 
 LASTFM_API = os.environ.get(
     "LASTFM_API") or "73d42d9c93626709dc2679d491d472bf"
@@ -387,7 +383,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"**Flicks Userbot Telah diaktifkan ✨**\n\n✥ Master : {ALIVE_NAME}\n✥ Botver : {BOT_VER}\n✥ Support: @FlicksSupport")
+    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"**Wiki Userbot Dah Aktif Ye Sundel ✨**\n\n✥ Master : {ALIVE_NAME}\n✥ Botver : {BOT_VER}\n✥ Support: @WikiStres")
     return
 
 with bot:
@@ -484,11 +480,11 @@ with bot:
                     f"✥ **ɪᴅ ᴘᴇɴɢɢᴜɴᴀ​ :** {c.id} \n"
                     f"✥ **ᴜsᴇʀɴᴀᴍᴇ​ :** @{c.username} \n"
                     f"✥ **ᴍᴇɴᴛɪᴏɴ​ :** [{get_display_name(c)}](tg://user?id={c.id}) \n\n"
-                    f"sᴇᴍᴏɢᴀ ʙᴇᴛᴀʜ ᴅɪsɪɴɪ ʏᴀ​ ✨\n",
+                    f"sᴇᴍᴏɢᴀ ʙᴇᴛᴀʜ ᴅɪsɪɴɪ ʏᴀ​ 🐥\n",
                     buttons=[
                         [
-                            Button.url("ʀᴇᴘᴏ ꜰʟɪᴄᴋs ᴜsᴇʀʙᴏᴛ​",
-                                       "https://github.com/fjgaming212/Flicks-Userbot")],
+                            Button.url("ʀᴇᴘᴏ ᴡɪᴋɪ ᴜsᴇʀʙᴏᴛ​",
+                                       "https://github.com/Wiki28/Wiki-Userbot")],
                     ]
                 )
 
@@ -497,11 +493,11 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"[👋](https://telegra.ph/file/296869330db1dec4e76e2.jpg) Hallo [{get_display_name(u)}](tg://user?id={u.id}) \nSelamat Datang Di **Flicks Userbot**\nGunakan saya untuk mempersantai grup anda\n",
+                    f"[🥺](https://telegra.ph/file/c890ac87b92df2c315fa8.jpg) Hallo [{get_display_name(u)}](tg://user?id={u.id}) \nSelamat Datang Di **Wiki Userbot**\nGunakan saya untuk mempersantai grup anda\n",
                     buttons=[
                         [
                             Button.url("Repository",
-                                       "https://github.com/fjgaming212/Flicks-Userbot"),
+                                       "https://github.com/Wiki28/Wiki-Userbot"),
                             custom.Button.inline("ɪɴꜰᴏ​",
                                                  data="about")],
                     ]
@@ -509,7 +505,7 @@ with bot:
 
         @ ken.tgbot.on(events.CallbackQuery(data=b"about"))
         async def about(event):
-            await event.edit(f"Master : {ALIVE_NAME}\nBotver : {BOT_VER}\nPlugin : {len(plugins)}\n\nOwner repo : [Fariz](tg://openmessage?user_id=1514078508)\nSupport : @FlicksSupport\n")
+            await event.edit(f"Master : {ALIVE_NAME}\nBotver : {BOT_VER}\nPlugin : {len(plugins)}\n\nOwner repo : [Fariz](tg://openmessage?user_id=2048936969)\nSupport : @WikiStres\n")
 
         @ ken.tgbot.on(events.CallbackQuery(data=b"keluar"))
         async def keluar(event):
@@ -523,13 +519,13 @@ with bot:
                     f"👋🏻 Hai [{get_display_name(u)}](tg://user?id={u.id}) Jika anda\n"
                     f"Ingin melihat repository ini dan Cara deploynya\n\n"
                     f"👇🏻 __Klik button url di bawah ini__ 👇🏻\n\n"
-                    f"**FLICKS USERBOT**\n",
+                    f"**WIKI USERBOT**\n",
                     buttons=[
                         [
                             Button.url("Repository",
-                                       "https://github.com/fjgaming212/Flicks-Userbot"),
+                                       "https://github.com/Wiki28/Wiki-Userbot"),
                             Button.url("Tutorial",
-                                       "https://t.me/InfoFlicksUserbot/64")],
+                                       "https://t.me/WikiStres/1489")],
                     ]
                 )
 
@@ -540,9 +536,9 @@ with bot:
                 await event.message.get_sender()
                 text = (
                     f"**Hello** [{get_display_name(u)}](tg://user?id={u.id}) **Is Its Alive Bot**\n\n"
-                    f"         ✘ 𝐅𝐥𝐢𝐜𝐤𝐬-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 ✘ \n"
+                    f"         ☆ 𝐖𝐢𝐤𝐢-𝐔𝐬𝐞𝐫𝐛𝐨𝐭​ ☆ \n"
                     "▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n"
-                    f"          I'ᴍ Aʟɪᴠᴇ​ ✨ \n"
+                    f"          I'ᴍ Aʟɪᴠᴇ​ ️🐥 \n"
                     "▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱ \n"
                     f"`Pengguna  :` [{get_display_name(u)}](tg://user?id={u.id}) \n"
                     f"`Branch    :` {UPSTREAM_REPO_BRANCH} \n"
@@ -559,10 +555,10 @@ with bot:
                                               [
                                                   custom.Button.url(
                                                       text="Rᴇᴘᴏ",
-                                                      url="https://github.com/fjgaming212/Flicks-Userbot"),
+                                                      url="https://github.com/Wiki28/Wiki-Userbot"),
                                                   custom.Button.url(
                                                       text="Lɪsᴇɴsɪ​",
-                                                      url="https://github.com/fjgaming212/Flicks-Userbot/blob/Flicks-Userbot/LICENSE"
+                                                      url="https://github.com/Wiki28/Wiki-Userbot/blob/Wiki-Userbot/LICENSE"
                                                   )
                                               ]
                                           ]
@@ -581,7 +577,7 @@ with bot:
                     buttons=[
                         [
                             Button.url("Dengan Web",
-                                       "https://replit.com/@fjgaming212/StringSession#main.py"),
+                                       "https://replit.com/@Wiki28/stringen?v=1"),
                             Button.url("Dengan Bot",
                                        "https://t.me/StringSessionFlicksbot")],
                     ]
@@ -606,7 +602,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             current_page_number = int(lockpage)
             buttons = paginate_help(current_page_number, plugins, "helpme")
-            text = f"\n**Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ​**\n\n **Mᴀsᴛᴇʀ​** {DEFAULTUSER}\n\n** Bʀᴀɴᴄʜ :** Flicks-Userbot\n** Vᴇʀsɪ :** `v{BOT_VER}`\n** Pʟᴜɢɪɴs :** `{len(plugins)}`\n"
+            text = f"\n**Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ​**\n\n **Mᴀsᴛᴇʀ​** {DEFAULTUSER}\n\n** Bʀᴀɴᴄʜ :** Wiki-Userbot\n** Vᴇʀsɪ :** `v{BOT_VER}`\n** Pʟᴜɢɪɴs :** `{len(plugins)}`\n"
             await event.edit(
                 text,
                 file=kenlogo,
@@ -620,79 +616,79 @@ with bot:
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@FlicksSupport"):
+                    "@WikiStres"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=kenlogo,
                     link_preview=False,
-                    text=f"\n**Flicks-Userbot**\n\n✥**Mᴀsᴛᴇʀ​** {ALIVE_NAME}\n\n✥**ʙʀᴀɴᴄʜ :** Flicks-Userbot\n✥**Vᴇʀsɪ :** {BOT_VER}\n✥**Plugin** : {len(plugins)}".format(
+                    text=f"\n**Wiki-Userbot**\n\n✥**Mᴀsᴛᴇʀ​** {ALIVE_NAME}\n\n✥**ʙʀᴀɴᴄʜ :** Wiki-Userbot\n✥**Vᴇʀsɪ :** {BOT_VER}\n✥**Plugin** : {len(plugins)}".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
                 )
             elif query.startswith("about"):
                 result = builder.article(
-                    "Tentang Flicks-Userbot ",
-                    text=f"Flicks-Userbot [☘️]({ALIVE_LOGO}) adalah userbot Telegram modular yang berjalan di Python 3.6 dengan database sqlalchemy\n[Fariz](tg://openmessage?user_id=1514078508) membuat dan menambahkan modul yang dibutuhkan.\nUntuk mengetahui perintah Flicks-Userbot gunakan perintah `.helpme` dan untuk mengecek userbot gunakan perintah `.alive`",
+                    "Tentang Wiki-Userbot ",
+                    text=f"Wiki-Userbot [🐥]({ALIVE_LOGO}) adalah userbot Telegram modular yang berjalan di Python 3.6 dengan database sqlalchemy\n[Wiki W](tg://openmessage?user_id=2048936969) membuat dan menambahkan modul yang dibutuhkan.\nUntuk mengetahui perintah Wiki-Userbot gunakan perintah `.helpme` dan untuk mengecek userbot gunakan perintah `.alive`",
                     buttons=[
                         [
                             custom.Button.url(
                                 "ᴅᴇᴘʟᴏʏ​",
-                                "https://heroku.com/deploy?template=https://github.com/fjgaming212/Deploy-FlicksUbot"),
+                                "https://heroku.com/deploy?template=https://github.com/Wiki28/Wiki-Userbot"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/fjgaming212/Flicks-Userbot")],
+                                "https://github.com/Wiki28/Wiki-Userbot")],
                         [custom.Button.url(
                             "ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ​",
-                            "t.me/InfoFlicksUserbot")]],
+                            "t.me/terserahwiki")]],
                     link_preview=True)
-            elif query.startswith("flicksalive"):
+            elif query.startswith("wikialive"):
                 result = builder.article(
                     "Flicks-Userbot ",
-                    text=f"[⁣]({ALIVE_LOGO})**The Flicks Userbot** \n{FLICKS_TEKS_KUSTOM} \n\n┏━━━━━━━━━━━━━━━━━━━ \n┣  **Master**   : {ALIVE_NAME} \n┣  **Telethon** :` Ver {version.__version__} `\n┣  **Python**   :` Ver {python_version()} `\n┣  **Branch**   :` {UPSTREAM_REPO_BRANCH} `\n┣  **Bot Ver**  :` v.{BOT_VER} `\n┣  **Modules**  :` {len(modules)} Modules `\n┣  **Support**  : @FlicksSupport \n┗━━━━━━━━━━━━━━━━━━━",
+                    text=f"[⁣]({ALIVE_LOGO})**The Wiki Userbot** \n{WIKI_TEKS_KUSTOM} \n\n┏━━━━━━━━━━━━━━━━━━━ \n┣  **Master**   : {ALIVE_NAME} \n┣  **Telethon** :` Ver {version.__version__} `\n┣  **Python**   :` Ver {python_version()} `\n┣  **Branch**   :` {UPSTREAM_REPO_BRANCH} `\n┣  **Bot Ver**  :` v.{BOT_VER} `\n┣  **Modules**  :` {len(modules)} Modules `\n┣  **Support**  : @WikiStres \n┗━━━━━━━━━━━━━━━━━━━",
                     buttons=[
                         [
                             custom.Button.url(
                                 "ᴅᴇᴘʟᴏʏ​",
-                                "https://heroku.com/deploy?template=https://github.com/fjgaming212/Deploy-FlicksUbot"),
+                                "https://heroku.com/deploy?template=https://github.com/Wiki28/Wiki-Userbot"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/fjgaming212/Flicks-Userbot")],
+                                "https://github.com/Wiki28/Wiki-Userbot")],
                         [custom.Button.url(
                             "ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ​",
-                            "t.me/InfoFlicksUserbot")]],
+                            "t.me/terserahwiki")]],
                     link_preview=True)
             elif query.startswith("tutor"):
                 result = builder.article(
-                    "Tutorial memasang Flicks-Userbot ",
-                    text=f"Buat teman teman yang ingin memasang userbot seperti saya anda bisa melihat tutorial di bawah ini\nDapatkan API_KEY dan API_HASH di web `my.telegram.org`.\nDapatkan STRING_SESSION di web replit atau bot\nDapatkan BOT_TOKEN dan BOT_USERNAME di [@BotFather](tg://user?id=93372553)\nDapatkan HEROKU_API_KEY di `dashboard.heroku.com/account`\nTerus Nyalakan, tutorial lengkap [klik disini](https://t.me/InfoFlicksUserbot/64)",
+                    "Tutorial memasang Wiki-Userbot ",
+                    text=f"Buat teman teman yang ingin memasang userbot seperti saya anda bisa melihat tutorial di bawah ini\nDapatkan API_KEY dan API_HASH di web `my.telegram.org`.\nDapatkan STRING_SESSION di web replit atau bot\nDapatkan BOT_TOKEN dan BOT_USERNAME di [@BotFather](tg://user?id=93372553)\nDapatkan HEROKU_API_KEY di `dashboard.heroku.com/account`\nTerus Nyalakan, tutorial lengkap [klik disini](https://t.me/WikiStres/1489)",
                     buttons=[
                         [
                             custom.Button.url(
                                 "ᴅᴇᴘʟᴏʏ​",
-                                "https://heroku.com/deploy?template=https://github.com/fjgaming212/Deploy-Flicks"),
+                                "https://heroku.com/deploy?template=https://github.com/Wiki28/Wiki-Userbot"),
                             custom.Button.url(
                                 "sᴛʀɪɴɢ",
-                                "https://t.me/InfoFlicksUserbot/110")],
+                                "https://replit.com/@Wiki28/stringen?v=1")],
                         [custom.Button.url(
                             "ʀᴇᴘᴏ",
-                            "https://github.com/fjgaming212/Flicks-Userbot")]],
+                            "https://github.com/Wiki28/Wiki-Userbot")]],
                     link_preview=False)
             else:
                 result = builder.article(
-                    " ✘ Flicks-Userbot ✘",
-                    text=f"""**Flicks-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✥**Mᴀsᴛᴇʀ​** {ALIVE_NAME}\n✥**Vᴇʀsɪ :** {BOT_VER}\n✥**Plugin** : {len(plugins)}\n✥**ᴀssɪsᴛᴇɴ :** @{BOT_USERNAME}\n➖➖➖➖➖➖➖➖➖[➖]({ALIVE_LOGO})""",
+                    " ☆ Wiki-Userbot ☆",
+                    text=f"""**Wiki-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✥**Mᴀsᴛᴇʀ​** {ALIVE_NAME}\n✥**Vᴇʀsɪ :** {BOT_VER}\n✥**Plugin** : {len(plugins)}\n✥**ᴀssɪsᴛᴇɴ :** @{BOT_USERNAME}\n➖➖➖➖➖➖➖➖➖[➖]({ALIVE_LOGO})""",
                     buttons=[
                         [
                             custom.Button.url(
                                 "sᴜᴘᴘᴏʀᴛ",
-                                "t.me/FlicksSupport"),
+                                "t.me/WikiStres"),
                             custom.Button.url(
                                 "ᴄʜᴀɴɴᴇʟ​​",
-                                "t.me/InfoFlicksUserbot")],
+                                "t.me/terserahwiki")],
                         [custom.Button.url(
                             "ʀᴇᴘᴏ",
-                            "https://github.com/fjgaming212/Flicks-Userbot")]],
+                            "https://github.com/Wiki28/Wiki-Userbot")]],
                     link_preview=True,
                 )
             await event.answer(
@@ -722,7 +718,7 @@ with bot:
             )
         )
         async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:  # @Flicks_Userbot
+            if event.query.user_id == uid:  # @Wiki_Userbot
                 # https://t.me/TelethonChat/115200
                 await event.edit(
                     file=kenlogo,
@@ -731,8 +727,8 @@ with bot:
                         [
                             custom.Button.inline("Alive",
                                                  data="alive_inline"),
-                            custom.Button.inline("Flicks",
-                                                 data="flicks_inline")],
+                            custom.Button.inline("Wiki",
+                                                 data="Wiki_inline")],
                         [Button.inline("Oᴘᴇɴ Mᴇɴᴜ", data="open")],
                         [custom.Button.inline(
                             "Cʟᴏsᴇ", b"close")],
@@ -747,7 +743,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 text = (
-                    f"__**{FLICKS_TEKS_KUSTOM}**__ \n\n"
+                    f"__**{WIKI_TEKS_KUSTOM}**__ \n\n"
                     "============================\n"
                     f"      **Alive Inline** \n"
                     "============================\n"
@@ -758,7 +754,7 @@ with bot:
                     f"`Bahasa    :` Python \n"
                     f"`Database  :` Mongo db \n"
                     "============================\n"
-                    f"    **FLICKS-USERBOT** \n"
+                    f"    **WIKI-USERBOT** \n"
                     "============================")
                 await event.edit(
                     text,
@@ -767,9 +763,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("Repository",
-                                       "https://github.com/fjgaming212/Flicks-Userbot"),
+                                       "https://github.com/Wiki28/Wiki-Userbot"),
                             Button.url("License",
-                                       "https://github.com/fjgaming212/Flicks-Userbot/blob/Flicks-Userbot/LICENSE")],
+                                       "https://github.com/Wiki28/Wiki-Userbot/blob/Wiki-Userbot/LICENSE")],
                         [custom.Button.inline(
                             "⬅️ Kembali", data="open")],
                     ]
@@ -791,14 +787,14 @@ with bot:
                     f"█░║║║╠─║─║─║║║║║╠─░█\n"
                     "█░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░█\n"
                     f"█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█\n"
-                    f"Flicks-Userbot versi {BOT_VER} berjalan\n"
+                    f"Wiki-Userbot versi {BOT_VER} berjalan\n"
                     f"master {ALIVE_NAME}\n"
                     f"Selamat bersenang-senang dengan saya\n"
                     f"Anda dapat memberi tahu orang lain\n"
                     f"cara membuat userbot dengan `{CMD_HANDLER}tutorial`\n"
                     "Terimakasih\n"
-                    f"Support : @FlicksSupport\n"
-                    "Channel : @InfoFlicksUserbot")
+                    f"Support : @WikiStres\n"
+                    "Channel : @terserahwiki")
                 await event.edit(
                     text,
                     file=logo,
@@ -806,9 +802,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("Repository",
-                                       "https://github.com/fjgaming212/Flicks-Userbot"),
+                                       "https://github.com/Wiki28/Wiki-Userbot"),
                             Button.url("License",
-                                       "https://github.com/fjgaming212/Flicks-Userbot/blob/Flicks-Userbot/LICENSE")],
+                                       "https://github.com/Wiki28/Wiki-Userbot/blob/Wiki-Userbot/LICENSE")],
                         [custom.Button.inline(
                             "⬅️ Kembali", data="open")],
                     ]
@@ -871,7 +867,7 @@ with bot:
                     )
                 )
             else:
-                reply_pop_up_alert = f"""Jangan Menggunakan Milik {DEFAULTUSER} !"""
+                reply_pop_up_alert = f"""Jangan Menggunakan Milik {DEFAULTUSER} Ye Sundel!"""
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
