@@ -1,71 +1,63 @@
-#         FLICKS-USERBOT​    
+<h1 align="center">⚡ WIKI-UBOT ⚡</h1>
 
-</p>
+
 <p align="center">
-    <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
-    <a href="https://github.com/fjgaming212/Flicks-Userbot/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-red.svg?style=flat-square" /></a>
-    <a href="https://app.codacy.com/gh/fjgaming212/Flicks-Userbot/dashboard"> <img src="https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=red&logo=codacy&style=flat-square" alt="Codacy" /></a><br>
-    <a href="https://github.com/fjgaming212/Flicks-Userbot"> <img src="https://img.shields.io/github/repo-size/fjgaming212/Flicks-Userbot?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
-    <a href="https://github.com/fjgaming212/Flicks-Userbot/commits/main"> <img src="https://img.shields.io/github/last-commit/fjgaming212/Flicks-Userbot?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
-    <a href="https://github.com/fjgaming212/Flicks-Userbot/issues"> <img src="https://img.shields.io/github/issues/fjgaming212/Flicks-Userbot?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
-    <a href="https://github.com/fjgaming212/Flicks-Userbot/fork"> <img src="https://img.shields.io/github/forks/fjgaming212/Flicks-Userbot?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
-    <a href="https://github.com/fjgaming212/Flicks-Userbot/network/members"> <img src="https://img.shields.io/github/stars/fjgaming212/Flicks-Userbot?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
+    <a href="https://github.com/Wiki28/WIKI-UBOT/commits/WIKI-UBOT"><img 
+src="https://img.shields.io/github/last-commit/Wiki28/WIKI-UBOT?color=ff0000&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Wiki28/WIKI-UBOT"> <img 
+src="https://img.shields.io/github/repo-size/Wiki28/WIKI-UBOT?logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://pypi.org/project/Telethon/"><img 
+src="https://img.shields.io/pypi/v/telethon?color=important&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
+    <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.6-purple?style=for-the-badge&logo=appveyor&logoColor=green"/>
+    </p>
+
+[![Sparkline](https://stars.medv.io/Wiki28/WIKI-UBOT.svg)](https://stars.medv.io/Wiki28/WIKI-UBOT)
+
+## DISCLAIMER
+
+Userbot yang berbasis [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT), [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot), [Flicks-Userbot](https://github.com/fjgaming212/Flicks-Userbot), dengan fungsi untuk mempermudah pengelolaan (grup chat) serta menyediakan beberapa fitur (otomatis) dan membuat penggunaan telegram lebih menyenangkan 
+
+```
+Saya tidak bertanggung jawab atas penyalahgunaan bot ini.
+Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
+```
+
+## Support!
 </p>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+    <p align="center"> 
+    <a href="https://t.me/Fantasi_Virtual" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
+    <a href="https://t.me/keluhkuhadeh" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
+    <a href="https://instagram.com/terserah_wiki" target="blank"><img src="https://img.icons8.com/nolan/55/instagram-new.png" /></a>
+</p>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-Flicks-Userbot adalah userbot Telegram modular yang berjalan di Python 3.6 dengan database sqlalchemy.
-
-Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang saya butuhkan dengan banyak perubahan, fitur dan module.
-
-    
-<p align="center">&nbsp;</p>
-
-### Disclaimer 
-```
-             ⚠️ PERINGATAN UNTUK ANDA ⚠️ ️
-   Flicks-Userbot digunakan untuk membantu aktifitas akun anda di telegram
-   Kami tidak bertanggung jawab atas apa yang anda salah gunakan pada repository ini!
-      Hati hati dalam penggunaan pada repository ini !
-   Jika salah satu member salah gunakan repository ini , kami terpaksa harus melakukan gban kepada anda 
-  Jangan pernah sekali sekali menyalah gunakan repository ini
-```
+## Language
+<p align="center"> 
+<a 
+href="https://www.python.org" target="_blank"> <img 
+src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="150" height="150"/> 
+</a> </p>
 
 
-### Generate String Using Replit
 
-[![FLICKS-UBOT-STRING](https://img.shields.io/badge/run-string__session.py-blue?style=for-the-badge&logo=repl.it)](https://replit.com/@fjgaming212/StringSession#main.py)
+## AMBIL STRING LU DISINI:
+<p align="center"><a 
+href="https://replit.com/@Wiki28/Session-String-Generator?v=1"><img 
+src="https://img.shields.io/badge/Generate%20String%20Sesion-000000?style=flat&logo=replit&logoColor=white" width="250" height="38.60" />
+</a></p>
 
+## DEPLOY TO HEROKU 💜
+<p align="center"><a 
+href="https://heroku.com/deploy?template=https://github.com/Wiki28/Wiki-Userbot/"> <img 
+src="https://img.shields.io/badge/Deploy%20To%20Heroku-DE1EFB?style=flat&logo=heroku" width="250" height="38.60" />
+</a></p>
 
-## DEPLOY TO HEROKU 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/fjgaming212/Flicks-Deploy"> <img src="https://www.herokucdn.com/deploy/button.svg" /></a></p>
+## © Credits
 
-### Tutorial Deploy
-```
-Dapatkan API_KEY dan API_HASH di web my.telegram.org.
-Dapatkan STRING_SESSION di web replit
-Dapatkan BOT_TOKEN dan BOT_USERNAME di @BotFather
-Dapatkan HEROKU_API_KEY di dashboard.heroku.com/account
-Terus Nyalakan, tutorial lengkap cek di Channel Update
-```
-
-
-### Support & Updates 
-Gabung [Grup Support](https://t.me/FlicksSupport) Dan [Channel Update](https://t.me/InfoFlicksUserbot) Untuk Mengetahui update userbot kami
-
-
-  <b>© Credits</b></summary>
-
-
-⚡ **CONTRIBUTOR AND TEAM**
-*   [Fariz](https://github.com/fjgaming212/Flicks-Userbot)    Flicks - Userbot
-*   [Skyzo](https://github.com/ridho17-ind/XBot-Music)     Flicks Music
-*   [Kyy](http://github.com/muhammadrizky16/Kyy-Userbot)    Kyy - Userbot
-*   [Tonic](http://github.com/Tonic990/Tonic-User)    Tonic - Userbot
-*   [Skyzu](https://github.com/Skyzu/Skyzu-Userbot)     Skyzu - Userbot
-
-🔰 **THANKS YOU TO**
-*   [Kennedy](https://github.com/KennedyProject/KEN-UBOT)    Ken - Userbot
-*   [Apis](https://github.com/apisuserbot/King-Userbot)     King - Userbot
-*   [Vicky](https://github.com/Vckyou/Geez-Project)    Geez - Project 
+ **TERIMAKASIH BANYAK KEPADA**
+*   [Fatur](https://github.com/DIORros285/DIOR-UBOT) DIOR-UBOT 
+*   [Ramadhani](https://github.com/ramadhani892/RAM-UBOT) RAM-UBOT
+*   [VCKYOU](https://github.com/Vckyou/Geez-Project)    Geez - Project
 *   [Koala](https://github.com/ManusiaRakitan/Kampang-Bot)    Kampang - Bot
-*   [Risman](https://github.com/mrismanaziz/Man-Userbot)   Man - Userbot
-*   DAN TERIMAKASIH KEPADA USERBOT LAINNYA
+*   DAN KEPADA USERBOT INDONESIA LAINNYA!.
