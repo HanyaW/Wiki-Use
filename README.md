@@ -43,7 +43,7 @@ src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/pyth
 
 ## AMBIL STRING LU DISINI:
 <p align="center"><a 
-href="https://replit.com/@Wiki28/Session-String-Generator?v=1"><img 
+href="https://replit.com/@Wiki28/stringen?v=1"><img 
 src="https://img.shields.io/badge/Generate%20String%20Sesion-000000?style=flat&logo=replit&logoColor=white" width="250" height="38.60" />
 </a></p>
 
