@@ -12,7 +12,7 @@ logging.basicConfig(
     level=logging.WARNING)
 
 
-@flicks_cmd(pattern="aboutflicks")
+@wiki_cmd(pattern="aboutwiki")
 async def yardim(event):
     try:
         kenbotusername = BOT_USERNAME
