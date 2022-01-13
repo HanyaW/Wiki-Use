@@ -9,12 +9,12 @@ logging.basicConfig(
     level=logging.WARNING)
 
 
-@flicks_cmd(pattern="helpme")
+@wiki_cmd(pattern="helpme")
 async def yardim(event):
     try:
         kenbotusername = BOT_USERNAME
         if kenbotusername is not None:
-            results = await event.client.inline_query(kenbotusername, "@FlicksSupport")
+            results = await event.client.inline_query(kenbotusername, "@WikiStres")
             await results[0].click(
                 event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
             )
