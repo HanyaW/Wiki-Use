@@ -45,7 +45,7 @@ async def _(event):
         "INFO - Rose-Userbot: Logged in as 557667062",
         "INFO - Rose-Userbot: Successfully...",
         "919852+00:00 app[worker.1]: 919 - Rose-Userbot -",
-        "INFO - ✨ ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ✨ ⚙️ V5.0 [TELAH DIAKTIFKAN!]",
+        "INFO - 🐥 ᴡɪᴋɪ ᴜsᴇʀʙᴏᴛ​ 🐥 ⚙️ V5.0 [TELAH DIAKTIFKAN!]",
         "**Build Succeeded**",
     ]
 
