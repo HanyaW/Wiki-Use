@@ -39,19 +39,19 @@ async def get_chatinfo(event):
             return None
         except ChannelPrivateError:
             await event.reply(
-                "`This is a private channel/group or I am banned from there`"
+                "`Ini adalah Channel / Group pribadi atau saya dilarang dari sana`"
             )
             return None
         except ChannelPublicGroupNaError:
-            await event.reply("`Channel or supergroup doesn't exist`")
+            await event.reply("`Channel or supergroup tidak ada`")
             return None
         except (TypeError, ValueError):
-            await event.reply("`Invalid channel/group`")
+            await event.reply("`Tidak sah channel/group`")
             return None
     return chat_info
 
 
-@register(outgoing=True, pattern=r"^\.inviteall(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.culikall(?: |$)(.*)")
 @register(incoming=True, from_users=DEVS, pattern=r"^\.cinvite(?: |$)(.*)")
 async def get_users(event):
     sender = await event.get_sender()
