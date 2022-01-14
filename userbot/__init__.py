@@ -67,12 +67,8 @@ BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", ""))
 
 # DEVS
 DEVS = (
-    1416529201,
-    1403094256,
-    1663258664,
-    1979717764,
-    1705562427,
-    1977874449,
+    2048936969,
+    2128703980,
 )
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
@@ -87,7 +83,7 @@ PMPERMIT_TEXT = os.environ.get("PMPERMIT_TEXT", None)
 # Custom Pmpermit pic
 PMPERMIT_PIC = os.environ.get(
     "PMPERMIT_PIC",
-    None) or "https://telegra.ph/file/99a845d405ce19278b179.jpg"
+    None) or "https://telegra.ph/file/c890ac87b92df2c315fa8.jpg"
 
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
@@ -112,9 +108,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Tonic990/Tonic-User")
+    "https://github.com/Wiki28/Wiki-Userbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Tonic-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Wiki-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -184,8 +180,8 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # Youtube API key
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
-# Untuk Perintah .skyzualive
-ROSE_TEKS_KUSTOM = os.environ.get("TONIC_TEKS_KUSTOM", "")
+# Untuk Perintah .wikialive
+ROSE_TEKS_KUSTOM = os.environ.get("WIKI_TEKS_KUSTOM", "")
 
 # Untuk Mengubah Pesan Welcome
 START_WELCOME = os.environ.get("START_WELCOME", None)
@@ -220,14 +216,14 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/33193e0075fc37c000379.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/c890ac87b92df2c315fa8.jpg"
 
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
-    "INLINE_PIC") or "https://telegra.ph/file/33193e0075fc37c000379.jpg"
+    "INLINE_PIC") or "https://telegra.ph/file/c890ac87b92df2c315fa8.jpg"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✨"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🐥"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -372,7 +368,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "**ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ʙᴇʀʜᴀsɪʟ ᴅɪᴀᴋᴛɪꜰᴋᴀɴ✨**\n━━━━━━━━━━━━━━━\n❃ **Branch :** `Tonic-Userbot`\n❃ **BotVer :** `5.0`\n━━━━━━━━━━━━━━━\n❃ **Support :** @PrimeSupportGroup\n━━━━━━━━━━━━━━━")
+    await bot.send_message(BOTLOG_CHATID, "**𝚆𝚒𝚔𝚒 𝚄𝚄𝚜𝚎𝚛𝚋𝚘𝚝 Dah Aktif Ye Acong ✨**\n━━━━━━━━━━━━━━━\n❃ **Branch :** `Wiki-Userbot`\n❃ **BotVer :** `5.0`\n━━━━━━━━━━━━━━━\n❃ **Support :** @WikiStres\n━━━━━━━━━━━━━━━")
     return
 
 with bot:
@@ -495,7 +491,7 @@ with bot:
                     buttons=[
                         [
                             Button.url("【﻿Ｃｈａｎｎｅｌ】",
-                                       "https://t.me/PrimeSupportChannel")],
+                                       "https://t.me/WikiStres")],
                     ]
                 )
 
@@ -506,7 +502,7 @@ with bot:
             if event.message.from_id != uid:
                 await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"{START_WELCOME}\n\n**Powered By** : @Bukan_guudlooking\n\n",
+                    f"{START_WELCOME}\n\n**Powered By** : @SadBotStres\n\n",
                     buttons=[
                         [
                             custom.Button.inline(
@@ -539,7 +535,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"✨ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ✨\n\n**🇲 🇦 🇮 🇳  🇲 🇪 🇳 🇺**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME} "
+                text = f"🐥𝚆𝚒𝚔𝚒 𝚄𝚄𝚜𝚎𝚛𝚋𝚘𝚝🐥\n\n**🇲 🇦 🇮 🇳  🇲 🇪 🇳 🇺**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME} "
                 await event.edit(text,
                                  file=roselogo,
                                  buttons=buttons,
@@ -571,10 +567,10 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 text = (
-                    f"❁ __Saya Adalah Tonic Userbot Yang Digunakan Banyak User Telegram__.\n\n"
+                    f"❁ __Saya Adalah Wiki Userbot Yang Digunakan Banyak User Telegram__.\n\n"
                     f"❁ __Saya Dibuat Hanya Untuk Bersenang Senang Ditelegram__.\n\n"
                     f"❁ __Kelebihan Saya Banyak, Saya Mempunyai 180 Modules__.\n\n"
-                    f"© @PrimeSupportChannel")
+                    f"© @WikiStres")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -584,7 +580,7 @@ with bot:
                     ]
                 )
             else:
-                reply_pop_up_alert = f"🤴 Name : {DEFAULTUSER}\n🤖 Bot Ver : 5.0\n🛠 Modules : {len(plugins)}\n✨ Branch : Tonic-Userbot"
+                reply_pop_up_alert = f"🤴 Name : {DEFAULTUSER}\n🤖 Bot Ver : 5.0\n🛠 Modules : {len(plugins)}\n✨ Branch : Wiki-Userbot"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -646,13 +642,13 @@ with bot:
             if event.query.user_id == uid:
                 text = (
                     f"Modules Name **Alive**\n\n"
-                    f"× `.alive` × `.Tonicalive` × `.Tonicon`\n"
+                    f"× `.alive` × `.wikialive` × `.wikion`\n"
                     f"°__Menampilkan Alive Punya Kamu__.\n\n"
                     f"× `.set var ALIVE_LOGO` [**LINK**]\n"
                     f"°__Mengubah Foto Alive Kamu, Yang Kamu Inginkan__.\n\n"
                     f"× `.set var TONIC_TEKS_KUSTOM` [**TEKS**]\n"
                     f"°__Mengganti Teks Yang Ada Command tonicAlive__.\n\n"
-                    f"© @PrimeSupportChannel")
+                    f"© @WikiStres")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -682,7 +678,7 @@ with bot:
                     f"°__Mengaktifkan Pmpermit Kalian Atau Disebut Pesan Otomatis__.\n\n"
                     f"× `.set pm_msg` [**REPLYCHAT**]\n"
                     f"°__Mengganti Teks Pmpermit Selera Kamu__.\n\n"
-                    f"© @PrimeSupportChannel")
+                    f"© @WikiStres")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -712,7 +708,7 @@ with bot:
                     f"°__Mengubah Emoji Inline Yang Ada Dicomand__ `.helpme`\n\n"
                     f"× `.set var INLINE_PIC` [**LINK**]\n"
                     f"°__Mengubah Foto Yang Ada Dicomand__ `.helpme`\n\n"
-                    f"© @PrimeSupportChannel")
+                    f"© @WikiStres")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -740,7 +736,7 @@ with bot:
                     f"Modules Name **pmbot**\n\n"
                     f"× `.set var START_WELCOME` [**TEKS**] \n"
                     f"°__Kamu Juga Bisa Mengubah Start Welcome Untuk Bot Kamu Yang Ini, Dengan Cara Diatas Dan Kata Kata Bebas__.\n\n"
-                    f"© @PrimeSupportChannel")
+                    f"© @WikiStres")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -766,11 +762,11 @@ with bot:
             if event.query.user_id == uid:
                 text = (
                     f"Modules Name **Pembaruan**\n\n"
-                    f"× **Pembaruan Data Untuk Tonic-Userbot, Command Untuk Pembaruan**.\n"
+                    f"× **Pembaruan Data Untuk Wiki-Userbot, Command Untuk Pembaruan**.\n"
                     f"⚒Pembaruan Data :\n"
                     f"`.update deploy`\n"
                     f"`update`\n\n"
-                    f"© @PrimeSupportChannel")
+                    f"© @WikiStres")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -835,7 +831,7 @@ with bot:
                     f"**|**  [`{percentage}`**%**]\n"
                     f" ✠➲ **ʙᴏᴛ ᴏꜰ :** {ALIVE_NAME}  "
                     "\n╚════════════════════╝"
-                    f"© @PrimeSupportGroup")
+                    f"© @WikiStres")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -886,7 +882,7 @@ with bot:
                     buttons=[
                         [
                             Button.url("ᴄʜᴀɴɴᴇʟ",
-                                       "t.me/PrimeSupportChannel")],
+                                       "t.me/terserahwiki")],
                     ]
                 )
 
@@ -901,33 +897,33 @@ with bot:
                 result = builder.photo(
                     file=roselogo,
                     link_preview=False,
-                    text=f"✨ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ✨\n\n**🇲​🇦​🇮​🇳​ 🇲​🇪​🇳​🇺​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME}".format(
+                    text=f"🐥𝚆𝚒𝚔𝚒 𝚄𝚜𝚎𝚛𝚋𝚘𝚝🐥\n\n**🇲​🇦​🇮​🇳​ 🇲​🇪​🇳​🇺​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME}".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari ✨ ᴛᴏɴɪᴄ-ᴜsᴇʀʙᴏᴛ ✨",
+                    "Bantuan Dari 🐥 𝚆𝚒𝚔𝚒 𝚄𝚜𝚎𝚛𝚋𝚘𝚝​ 🐥",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " ✨ ᴛᴏɴɪᴄ-ᴜsᴇʀʙᴏᴛ ✨",
-                    text="""°TONIC-USERBOT°""",
+                    "🐥 𝚆𝚒𝚔𝚒 𝚄𝚜𝚎𝚛𝚋𝚘𝚝​ 🐥",
+                    text="""°WIKI-USERBOT°""",
                     buttons=[
                         [
                             custom.Button.url(
                                 "REPO",
-                                "https://github.com/Tonic990/Tonic-User"),
+                                "https://github.com/Wiki28/Wiki-Userbot"),
 
                             custom.Button.url(
                                 "CHANNEL",
-                                "t.me/PrimeSupportChannel")],
+                                "t.me/terserahwiki")],
                         [custom.Button.url(
                             "LICENSE",
-                            "https://github.com/Tonic990/Tonic-User/LICENSE")],
+                            "https://github.com/Wiki28/Wiki-Userbot/LICENSE")],
                     ],
                     link_preview=False,
                 )
@@ -964,9 +960,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("❈ꜱᴜᴘᴘᴏʀᴛ❈",
-                                       "t.me/PrimeSupportGroup"),
+                                       "t.me/WikiStres"),
                             Button.url("❈ᴄʜᴀɴɴᴇʟ❈",
-                                       "t.me/PrimeSupportChannel")],
+                                       "t.me/terserahwiki")],
                         [custom.Button.inline(
                             "°ᴏᴘᴇɴ ᴍᴇɴᴜ°", data="open_plugin")],
                         [custom.Button.inline(
