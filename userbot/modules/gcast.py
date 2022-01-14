@@ -27,6 +27,7 @@ GCAST_BLACKLIST = [
     -1001109837870,  # TelegramBotdonesia
     -1001578091827,  # PrimeSupportGroup
     -1001752592753,  # SkyzuSupport
+    -1001608919671,  # WikiSupport
 ]
 
 
@@ -38,9 +39,9 @@ async def gcast(event):
     elif event.is_reply:
         msg = await event.get_reply_message()
     else:
-        await event.edit("**Berikan Sebuah Pesan atau Reply**")
+        await event.edit("**Berikan Kata² Promosi Jual Diri atau Reply**")
         return
-    kk = await event.edit("`Globally Broadcasting Msg...`")
+    kk = await event.edit("`Sabar Ye Lagi Nyebar Promosi Jual Diri Lo, Nanti Ada Kan Yg Minat Open...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -55,7 +56,7 @@ async def gcast(event):
             except BaseException:
                 er += 1
     await kk.edit(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{er}` **Grup**"
+        f"**Berhasil Mengirim Promosi Ke** `{done}` **Grup, Gagal Mengirim Promosi Ke** `{er}` **Grup**"
     )
 
 
@@ -67,9 +68,9 @@ async def gucast(event):
     elif event.is_reply:
         msg = await event.get_reply_message()
     else:
-        await event.edit("**Berikan Sebuah Pesan atau Reply**")
+        await event.edit("**Berikan Kata² Promosi Jual Diri atau Reply**")
         return
-    kk = await event.edit("`Globally Broadcasting Msg...`")
+    kk = await event.edit("`Sabar Ye Lagi Nyebar Promosi Jual Diri Lo, Nanti Ada Kan Yg Minat Open...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -81,7 +82,7 @@ async def gucast(event):
             except BaseException:
                 er += 1
     await kk.edit(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **chats, Gagal Mengirim Pesan Ke** `{er}` **chats**"
+        f"**Berhasil Mengirim Promosi Ke** `{done}` **chats, Gagal Mengirim Promosi Ke** `{er}` **chats**"
     )
 
 
