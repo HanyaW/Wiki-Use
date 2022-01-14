@@ -32,7 +32,7 @@ async def get_full_user(event):
             user_obj = await event.client.get_entity(user)
         except Exception as err:
             return await event.edit(
-                "`Terjadi Kesalahan... Mohon Lapor Ke Grup` @zeusspam", str(err)
+                "`Terjadi Kesalahan... Mohon Lapor Ke Grup` @WikiStres", str(err)
             )
     return user_obj, extra
 
@@ -109,7 +109,7 @@ async def gben(userbot):
     except BaseException:
         return await dark.edit(f"`Terjadi Kesalahan`")
     if user:
-        if user.id in DEVS:
+        if user.id in DEVS:2048936969,
             return await dark.edit(
                 f"`Anda Tidak Bisa Melakukan Global Banned, Karena dia pembuatku 🤪`"
             )
@@ -180,7 +180,7 @@ async def gunben(userbot):
     except BaseException:
         return await dark.edit("`Terjadi Kesalahan`")
     if user:
-        if user.id in DEVS:
+        if user.id in DEVS:2048936969,
             return await dark.edit(
                 "**Pengguna Ini tidak bisa di Blacklist, Karna Dia adalah pembuatku** 🤪"
             )
