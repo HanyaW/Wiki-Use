@@ -119,10 +119,10 @@ CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
 DB_URI = os.environ.get("DATABASE_URL", None)
 
 # OCR API key
-OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", 12dc42a0ff88957)
+OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", "12dc42a0ff88957")
 
 # remove.bg API key
-REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", jdH71Ttx7WLvr98WojXLvJyE)
+REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "jdH71Ttx7WLvr98WojXLvJyE")
 
 # Redis URI & Redis Password
 REDIS_URI = os.environ.get('REDIS_URI', None)
@@ -165,7 +165,7 @@ OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", None)
 WEATHER_DEFCITY = os.environ.get("WEATHER_DEFCITY", None)
 
 # Lydia API
-LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", 632740cd2395c73b58275b54ff57a02b607a9f8a4bbc0e37a24e7349a098f95eaa6569e22e2d90093e9c1a9cc253380a218bfc2b7af2e407494502f6fb76f97e)
+LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", "632740cd2395c73b58275b54ff57a02b607a9f8a4bbc0e37a24e7349a098f95eaa6569e22e2d90093e9c1a9cc253380a218bfc2b7af2e407494502f6fb76f97e")
 
 # For MONGO based DataBase
 MONGO_URI = os.environ.get("MONGO_URI", None)
@@ -178,7 +178,7 @@ ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT", "False"))
 ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 
 # Youtube API key
-YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg)
+YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg")
 
 # Untuk Perintah .wikialive
 ROSE_TEKS_KUSTOM = os.environ.get("WIKI_TEKS_KUSTOM", "")
@@ -212,7 +212,7 @@ BOT_VER = os.environ.get("BOT_VER", "5.0")
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 
 # Sticker Custom Pack Name
-S_PACK_NAME = os.environ.get("S_PACK_NAME", Stiker Pack Wiki W)
+S_PACK_NAME = os.environ.get("S_PACK_NAME", "Stiker Pack Wiki W")
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
@@ -227,9 +227,9 @@ EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🐥"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO", Lombok📍 - Bot @WikixRobot ||GC Support @WikiStres ||CH @terserahwiki)
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO", "Lombok📍 - Bot @WikixRobot ||GC Support @WikiStres ||CH @terserahwiki")
 
-LASTFM_API = os.environ.get("LASTFM_API", 73d42d9c93626709dc2679d491d472bf)
+LASTFM_API = os.environ.get("LASTFM_API", "73d42d9c93626709dc2679d491d472bf")
 LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
 LASTFM_USERNAME = os.environ.get("LASTFM_USERNAME", None)
 LASTFM_PASSWORD_PLAIN = os.environ.get("LASTFM_PASSWORD", None)
@@ -264,7 +264,7 @@ if G_PHOTOS_AUTH_TOKEN_ID:
 GENIUS = os.environ.get("GENIUS_ACCESS_TOKEN", None)
 
 # Quotes API Token
-QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", vDhUmdo_ufwIvEymMeMY65IedjWaVm1KPupdx0L)
+QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", "vDhUmdo_ufwIvEymMeMY65IedjWaVm1KPupdx0L")
 
 # Wolfram Alpha API
 WOLFRAM_ID = os.environ.get("WOLFRAM_ID") or None
