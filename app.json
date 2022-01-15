@@ -1,6 +1,6 @@
 {
-  "name": "✨ ᴛᴏɴɪᴄ-ᴜsᴇʀʙᴏᴛ ✨",
-  "description": "🚫Tonic-Userbot🚫 USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "name": "🐥 𝚆𝚒𝚔𝚒-𝚄𝚜𝚎𝚛𝚋𝚘𝚝​ 🐥",
+  "description": "🚫Wiki-Userbot🚫 USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
   "logo": "https://telegra.ph/file/33193e0075fc37c000379.jpg",
   "keywords": [
     "telegram",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
 ],
-  "repository": "https://github.com/Tonic990/Tonic-User",
-  "telegram": "https://t.me/Bukan_guudlooking",
-  "success_url": "https://t.me/GroupVirtualMusic",
+  "repository": "https://github.com/Wiki28/Wiki-Userbot",
+  "telegram": "https://t.me/SadBotStres",
+  "success_url": "https://t.me/WikiStres",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -23,7 +23,7 @@
       "required": true
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di termux caranya ada di repo atau gunakan bot @PrimeStringBot",
+      "description": "Dapatkan String Session di termux caranya ada di repo atau gunakan bot @WikiStringBot",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -41,13 +41,15 @@
       "required": true
     },
     "BOTLOG_CHATID": {
-      "description": "Buatlah Sebuah Grup Publik Lalu Masukkan Bot @MissRose_Bot Ke Grup Mu, Setelah itu Ketik /id. Nanti akan muncul ID seperti ini Contoh : -1001234567890",
-      "value": "-1001155402562",
+      "description": "Buatlah Sebuah Grup Publik Lalu Masukkan Bot @MissRose_Bot Ke Grup Mu, Setelah itu Ketik /id. Nanti akan muncul ID seperti ini Contoh : -1001735661117",
+      "value": "-1001735661117",
       "required": true
     },
     "G_BAN_LOGGER_GROUP": {
-      "description": "Buatlah Sebuah Grup Publik Lalu Masukkan Bot @MissRose_Bot Ke Grup Mu, Setelah itu Ketik /id. Nanti akan muncul ID seperti ini Contoh : -1001234567890",
-      "value": "-1001155402562",
+      "description": "Buatlah Sebuah Grup Publik Lalu Masukkan Bot @MissRose_Bot Ke Grup Mu, Setelah itu Ketik /id. Nanti akan muncul ID seperti ini Contoh : -1001735661117",
+      "value": "-1001735661117
+
+",
       "required": true
     },
     "PM_AUTO_BAN": {
