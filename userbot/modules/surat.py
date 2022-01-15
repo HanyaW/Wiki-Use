@@ -31,6 +31,35 @@ async def typewriter(typew):
 
 # Create by myself @localheart
 
+@register(outgoing=True, pattern="^.ayatkursi(?: |$)(.*)")
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("**AYAT KURSI**")
+    sleep(2)
+    await typew.edit("**allāhu lā ilāha illā huw**")
+    sleep(2)
+    await typew.edit("**al-ḥayyul-qayyụm**")
+    sleep(2)
+    await typew.edit("**lā ta`khużuhụ sinatuw wa lā na`ụm**")
+    sleep(2)
+    await typew.edit("**lahụ mā fis-samāwāti wa mā fil-arḍ**")
+    sleep(2)
+    await typew.edit("**man żallażī yasyfa'u 'indahū illā bi`iżnih**")
+    sleep(2)
+    await typew.edit("**ya'lamu mā baina aidīhim wa mā khalfahum**")
+    sleep(2)
+    await typew.edit("**wa lā yuḥīṭụna bisyai`im min 'ilmihī illā bimā syā`**")
+    sleep(2)
+    await typew.edit("**wasi'a kursiyyuhus-samāwāti wal-arḍ**")
+    sleep(2)
+    await typew.edit("**wa lā ya`ụduhụ ḥifẓuhumā**")
+    sleep(2)
+    await typew.edit("**wa huwal-'aliyyul-'aẓīm**")
+
+
+# Create by myself @localheart
+
 CMD_HELP.update(
     {
         "surat": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alfatihah`\
