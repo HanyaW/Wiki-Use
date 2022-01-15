@@ -50,7 +50,6 @@ DEF_UNAPPROVED_MSG = (
     f"**ᴋᴀʀᴇɴᴀ sᴀʏᴀ ᴀᴋᴀɴ ᴏᴛᴏᴍᴀᴛɪs ᴍᴇᴍʙʟᴏᴋɪʀ ᴋᴀᴍᴜ,  ᴛᴜɴɢɢᴜ sᴀᴍᴘᴀɪ {DEFAULTUSER} ᴍᴇɴᴇʀɪᴍᴀ ᴘᴇsᴀɴ ᴋᴀᴍᴜ** \n"
     "╔═════════════════════╗\n"
     "│○›ᴘᴇsᴀɴ ᴏᴛᴏᴍᴀᴛɪs           \n"
-    f"│○›ʙʏ ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ           \n"
     "╚═════════════════════╝"
 )
 # =================================================================
@@ -58,8 +57,8 @@ DEF_UNAPPROVED_MSG = (
 
 @register(incoming=True, disable_edited=True, disable_errors=True)
 async def permitpm(event):
-    """Prohibits people from PMing you without approval. \
-        Will block retarded nibbas automatically."""
+    """Melarang orang-orang mengirimi Anda PM tanpa persetujuan. \
+        Akan memblokir nibbas yang terbelakang secara otomatis."""
     if not PM_AUTO_BAN:
         return
     self_user = await event.client.get_me()
