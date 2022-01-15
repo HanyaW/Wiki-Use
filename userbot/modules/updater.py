@@ -97,14 +97,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             return await event.delete()
         else:
             await event.edit(
-                "`✨ ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ✨ Berhasil DiUpdate,Restart Tunggu Sebentar`"
+                "`🐥 𝚆𝚒𝚔𝚒 𝚄𝚜𝚎𝚛𝚋𝚘𝚝​ 🐥 Berhasil DiUpdate,Restart Tunggu Sebentar`"
             )
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
-                BOTLOG_CHATID, "#BOT \n" "`✨ ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ✨ Berhasil Di Update`"
+                BOTLOG_CHATID, "#BOT \n" "`🐥 𝚆𝚒𝚔𝚒 𝚄𝚜𝚎𝚛𝚋𝚘𝚝​ 🐥 Berhasil Di Update`"
             )
 
     else:
@@ -122,9 +122,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit("**✨ ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ✨** `Berhasil Di Update!`")
+    await event.edit("**🐥 𝚆𝚒𝚔𝚒 𝚄𝚜𝚎𝚛𝚋𝚘𝚝 🐥​** `Berhasil Di Update!`")
     await asyncio.sleep(1)
-    await event.edit("**✨ ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ✨** `Di Restart....`")
+    await event.edit("**🐥 𝚆𝚒𝚔𝚒 𝚄𝚜𝚎𝚛𝚋𝚘𝚝​ 🐥** `Di Restart....`")
     await asyncio.sleep(1)
     await event.edit("`Mohon Menunggu Beberapa Detik.`")
     await asyncio.sleep(10)
@@ -132,7 +132,7 @@ async def update(event, repo, ups_rem, ac_br):
 
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#BOT \n" "**✨ ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ✨ Telah Di Perbarui.**"
+            BOTLOG_CHATID, "#BOT \n" "**🐥 𝚆𝚒𝚔𝚒 𝚄𝚜𝚎𝚛𝚋𝚘𝚝​ 🐥 Telah Di Perbarui.**"
         )
         await asyncio.sleep(100)
         await event.delete()
@@ -196,14 +196,14 @@ async def upstream(event):
 
     if changelog == "" and force_update is False:
         await event.edit(
-            f"\n✨ ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ✨ Sudah Versi Terbaru || Tunggu Update Terbaru\n"
+            f"\n🐥 𝚆𝚒𝚔𝚒 𝚄𝚜𝚎𝚛𝚋𝚘𝚝​ 🐥 Sudah Versi Terbaru || Tunggu Update Terbaru\n"
         )
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f"**Pembaruan Untuk ✨ ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ✨ :\n\n⚒️ Pembaruan Data :**\n`{changelog}`"
+        changelog_str = f"**Pembaruan Untuk 🐥 𝚆𝚒𝚔𝚒 𝚄𝚜𝚎𝚛𝚋𝚘𝚝​ 🐥 :\n\n⚒️ Pembaruan Data :**\n`{changelog}`"
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -226,13 +226,13 @@ async def upstream(event):
             "`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`"
         )
     else:
-        await event.edit("` Proses Update ✨ ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ✨, Loading....1%`")
-        await event.edit("` Proses Update ✨ ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ✨, Loading....20%`")
-        await event.edit("` Proses Update ✨ ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ✨, Loading....35%`")
-        await event.edit("` Proses Update ✨ ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ✨, Loading....77%`")
-        await event.edit("` Proses Update ✨ ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ✨, Updating...90%`")
+        await event.edit("` Proses Update , Loading....1%`")
+        await event.edit("` Proses Update , Loading....20%`")
+        await event.edit("` Proses Update , Loading....35%`")
+        await event.edit("` Proses Update , Loading....77%`")
+        await event.edit("` Proses Update , Updating...90%`")
         await event.edit(
-            "` Proses Update ✨ ᴛᴏɴɪᴄ ᴜsᴇʀʙᴏᴛ ✨, Mohon Tunggu Sebentar....100%`"
+            "` Proses Update 𝚆𝚒𝚔𝚒 𝚄𝚜𝚎𝚛𝚋𝚘𝚝​, Mohon Tunggu Sebentar....100%`"
         )
 
     if conf == "now":
